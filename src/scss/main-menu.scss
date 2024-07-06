@@ -1,0 +1,46 @@
+.main-menu {
+  position: relative;
+  &__list {
+    display: flex;
+    overflow: scroll;
+    scrollbar-width: none;
+    margin-left: 16px;
+    margin-top: 24px;
+  }
+  &__item {
+    flex-shrink: 0;
+  }
+  &__link {
+    padding: 6px 15px;
+    display: inline-block;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    line-height: 1.5;
+    color: #7e7e82;
+    border-radius: 6px;
+  }
+  &__link:hover {
+    border-color: $green;
+    background-color: #fff;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__list {
+      margin-top: 32px;
+    }
+  }
+  @media screen and (min-width: 1120px) {
+    &__list {
+      overflow: visible;
+      flex-wrap: wrap;
+      padding-inline: 22px;
+      margin-top: 8px;
+      margin-left: 32px;
+      padding: 0;
+    }
+    &__link {
+      padding-inline: 22px;
+      box-sizing: border-box;
+    }
+  }
+}

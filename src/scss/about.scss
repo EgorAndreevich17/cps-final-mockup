@@ -1,0 +1,55 @@
+.about {
+  &__text {
+    font-size: 14px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 24px;
+    line-height: 18px;
+    color: #7e7e82;
+    // height: 90px;
+    overflow: hidden;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+  }
+  &__text--preview{
+    overflow: hidden;
+    height: 54px;
+  }
+  &__button {
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 16px;
+    margin-top: 16px;
+    background-color: #f8f8f8;
+  }
+  &__button::before {
+    content: url(../img/expand.svg);
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  &__image {
+    margin-top: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 48px;
+    &__text {
+        margin: 0;
+        // height: 160px;
+        line-height: 20px;
+    }
+    &__text--preview{
+      overflow: hidden;
+      height: 80px;
+    }
+    &__image {
+        min-width: 50%;
+        margin-top: 0;
+        height: 208px;
+    }
+    &__button{
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.header {
+  &__inner {
+    background-color: $white;
+    padding: 18px 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d9fff5;
+    // height: 92px;
+  }
+  &__logo {
+    height: 50px;
+    margin-left: 16px;
+  }
+  &__buttons-user {
+    display: none;
+  }
+  &__service-menu {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  &__service-menu::before {
+    content: '';
+    display: inline-block;
+    border-radius: 1px;
+    width: 2px;
+    height: 32px;
+    background: $light-gray;
+    margin-right: 4px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__buttons-user {
+      display: flex;
+      margin-left: auto;
+      gap: 16px;
+    }
+    &__service-menu {
+      margin-left: 20px;
+    }
+    &__button {
+      margin-right: 20px;
+      position: relative;
+    }
+  }
+
+  @media screen and (min-width: 1120px) {
+    & {
+      display: none;
+    }
+    &__service-menu {
+      margin-left: auto;
+    }
+  }
+}

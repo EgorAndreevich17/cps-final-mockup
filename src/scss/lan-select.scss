@@ -1,0 +1,21 @@
+.lan-select{
+    &__radiobox {
+        display: none;
+    }
+    &__text {
+        margin-right: 7px;
+    }
+    &__text:hover {
+        opacity: 0.5;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    &__form {
+        display: flex;
+        margin-top: 40px;
+    }
+    &__form .lan-select__radiobox:checked + .lan-select__text {
+        opacity: 0.5;
+        transition: 1s;
+    }
+}

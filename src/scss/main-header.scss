@@ -1,0 +1,23 @@
+.main-header {
+  &__service-menu {
+    display: none;
+  }
+  @media screen and (min-width: 1120px) {
+    .header {
+      display: none;
+    }
+
+    &__service-menu {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    & {
+      display: flex;
+      align-items: center;
+      margin-top: 42px;
+      margin-right: 25px;
+    }
+  }
+}

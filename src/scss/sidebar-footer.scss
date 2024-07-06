@@ -1,0 +1,19 @@
+.sidebar-footer{
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 32px;
+    }
+    &__button {
+        margin-right: 16px;
+    }
+    &__email {
+        margin-top: 16px;
+    }
+    &__phone {
+        margin-top: 12px;
+        font-weight: 900;
+        font-size: 24px;
+        letter-spacing: 0.6px;
+    }
+}

@@ -1,0 +1,54 @@
+.button-menu {
+  cursor: pointer;
+  border-radius: 50%;
+  min-width: 40px;
+  min-height: 40px;
+  background-color: #ff3e79;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--icon--burger {
+    background-image: url(../img/burger-button.svg);
+  }
+  &--icon--service {
+    background-image: url(../img/service-button.svg);
+  }
+
+  &--icon--search {
+    background-image: url(../img/search-button.svg);
+  }
+
+  &--icon--plain--search {
+    background-image: url(../img/plain-search.svg);
+  }
+
+  &--icon--phone {
+    background-image: url(../img/call-button.svg);
+  }
+
+  &--icon--message {
+    background-image: url(../img/message-button.svg);
+  }
+
+  &--icon--contact {
+    background-image: url(../img/user-button.svg);
+  }
+
+  &--icon--cross {
+    background-image: url(../img/cross-button.svg);
+  }
+
+  @media screen and (min-width: 768px) {
+    &--icon--burger::after {
+      content: '';
+      display: block;
+      height: 32px;
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      translate: -50% -50%;
+      width: 2px;
+      background: $light-gray;
+    }
+  }
+}
