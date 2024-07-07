@@ -12,7 +12,8 @@
     }
     &__form {
         display: flex;
-        margin-top: 40px;
+        margin-top: 8px;
+        margin-bottom: 14px;
     }
     &__form .lan-select__radiobox:checked + .lan-select__text {
         opacity: 0.5;

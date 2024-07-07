@@ -10,6 +10,7 @@
     padding: 16px;
     text-transform: uppercase;
     letter-spacing: 0.2px;
+    margin-top: 32px;
   }
   &__title {
     font-size: 16px;
@@ -17,30 +18,5 @@
   &__body {
     margin-top: 16px;
     margin-left: 16px;
-  }
-  &__show-more-button {
-    display: none;
-    @media screen and (min-width: 768px) {
-      &__show-more-button {
-        display: inline;
-        color: black;
-        background: none;
-      }
-
-      &__show-more-button::before {
-        display: inline-block;
-        content: '';
-        background: url(../img/expand.svg) no-repeat;
-        vertical-align: middle;
-        height: 10px;
-        width: 8px;
-        margin-right: 16px;
-        transform: rotate(180deg);
-      }
-
-      &__show-more-button--reversed::before {
-        transform: rotate(0deg);
-      }
-    }
   }
 }

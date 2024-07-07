@@ -1,0 +1,18 @@
+.arrow-button {
+  display: flex;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  background-color: $white;
+  background-image: url(../img/dropdown.svg);
+  background-repeat:  no-repeat;
+  background-position: center center;
+  &:hover{
+    border-color: $white;
+    background-color: $pink;
+    background-image: url(../img/dropdown-white.svg);
+  }
+}
