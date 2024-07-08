@@ -1,0 +1,21 @@
+.elipse-button {
+  display: flex;
+  border: 2px solid $white;
+  border-radius: 16px;
+  justify-content: left;
+  padding-left: 12px;
+  align-items: center;
+  height: 32px;
+  width: 119px;
+  color: $white;
+  background-color: $pink;
+  background-image: url(../img/dropdown-white.svg);
+  background-repeat: no-repeat;
+  background-position: 100px center;
+  &:hover {
+    color: $pink;
+    border-color: $pink;
+    background-color: $white;
+    background-image: url(../img/dropdown.svg);
+  }
+}

@@ -1,0 +1,19 @@
+.service-slider {
+  overflow: hidden;
+  &__list {
+    margin-inline: 32px;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    padding-inline: 24px;
+  }
+  &__item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    height: 64px;
+    align-items: center;
+  }
+  &__button {
+    justify-self: right;
+  }
+}

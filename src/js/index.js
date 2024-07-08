@@ -25,6 +25,7 @@ overlay.addEventListener('click', function () {
 
 swiperInit('.brand-slider','.brand-slider__list','.brand-slider__item','#brandsPagination')
 swiperInit('.type-slider','.type-slider__list','.type-slider__item','#typesPagination')
+swiperInit('.service-slider','.service-slider__list','.service-slider__item','#servicesPagination')
 readMoreButton('.about__button','.about__text', 'Читать далее')
 readMoreButton('.brand-slider__show-more-button','.brand-slider__list')
 readMoreButton('.type-slider__show-more-button','.type-slider__list')
