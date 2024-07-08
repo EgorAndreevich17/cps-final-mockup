@@ -1,7 +1,6 @@
 .service-slider {
   overflow: hidden;
   &__list {
-    margin-inline: 32px;
     display: flex;
     flex-direction: column;
     background-color: $white;

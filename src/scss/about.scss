@@ -15,7 +15,7 @@
     overflow: hidden;
     height: 54px;
   }
-  
+
   &__button {
     font-size: 16px;
     font-weight: 700;
@@ -26,7 +26,7 @@
     &::before {
       display: inline-block;
       content: '';
-      background: url(../img/expand.svg)  no-repeat;
+      background: url(../img/expand.svg) no-repeat;
       vertical-align: middle;
       height: 10px;
       width: 8px;

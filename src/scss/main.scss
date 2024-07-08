@@ -1,16 +1,8 @@
 .main {
   background-color: $white-bg;
   &__title {
-    font-size: 28px;
-    font-weight: 700;
-    margin-top: 0;
     margin-bottom: 0;
-    border: 3px solid transparent;
-    border-left-color: $green;
-    padding-left: 12px;
-    line-height: 35px;
     margin-top: 24px;
-    font-weight: 900;
   }
   @media screen and (min-width: 768px) {
     &__about {
@@ -18,7 +10,7 @@
       padding-inline: 24px;
     }
   }
-  @media screen and (min-width: 1120px) {
+  @media screen and (min-width: 1366px) {
     &__title {
       margin-top: 0;
       padding-left: 32px;

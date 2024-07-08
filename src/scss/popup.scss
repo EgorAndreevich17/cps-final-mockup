@@ -1,0 +1,35 @@
+.popup {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  right: 0;
+  box-shadow: 16px 0px 52px 0px #0e185033;
+  padding: 18px 16px;
+  background: white;
+  z-index: 1000;
+  // float: left;
+  &__form {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &--hide {
+    display: none;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__button-submit {
+    align-self: flex-end;
+  }
+  &__button-close {
+    position: absolute;
+    left: -48px;
+  }
+  @media (min-width: 1366px) {
+    width: 440px;
+  }
+}

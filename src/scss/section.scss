@@ -1,5 +1,6 @@
 .section {
   background-color: $white-bg;
+  padding-inline: 32px;
   &__header {
     display: flex;
     align-items: center;
@@ -7,16 +8,12 @@
     color: #7e7e82;
     font-size: 16px;
     line-height: 24px;
-    padding: 16px;
+    padding-block: 16px;
     text-transform: uppercase;
     letter-spacing: 0.2px;
     margin-top: 32px;
   }
   &__title {
     font-size: 16px;
-  }
-  &__body {
-    margin-top: 16px;
-    margin-left: 16px;
   }
 }

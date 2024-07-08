@@ -1,9 +1,16 @@
-.nav-menu {
+.sidebar-main {
   &__list {
     display: flex;
     flex-direction: column;
     gap: 32px;
     align-items: flex-start;
+    margin-top: 20px;
+    @media screen and (min-width: 768px) {
+      margin-top: 46px;
+    }
+    @media (min-width: 1366px) {
+      margin-top: 38px;
+    }
   }
   &__link::before {
     content: '';
@@ -22,5 +29,4 @@
     border-left-color: $green;
     border-radius: 0 -4px -4px 0;
   }
-
 }
