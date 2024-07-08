@@ -4,18 +4,22 @@ export const showHideSidebar = function (
   sideBarSelector
 ) {
   const overlay = document.querySelector('.overlay')
-  const closeButton = document.querySelector(closeButtonSelector)
-  const openButton = document.querySelector(openButtonSelector)
+  const closeButtons = document.querySelectorAll(closeButtonSelector)
+  const openButtons = document.querySelectorAll(openButtonSelector)
   const sidebar = document.querySelector(sideBarSelector)
 
-  openButton.addEventListener('click', function () {
-    sidebar.classList.remove(sideBarSelector.substring(1) + '--hide')
-    overlay.classList.add('overlay--visible')
+  openButtons.forEach((openButton) => {
+    openButton.addEventListener('click', function () {
+      sidebar.classList.remove(sideBarSelector.substring(1) + '--hide')
+      overlay.classList.add('overlay--visible')
+    })
   })
 
-  closeButton.addEventListener('click', function () {
-    sidebar.classList.add(sideBarSelector.substring(1) + '--hide')
-    overlay.classList.remove('overlay--visible')
+  closeButtons.forEach((closeButton) => {
+    closeButton.addEventListener('click', function () {
+      sidebar.classList.add(sideBarSelector.substring(1) + '--hide')
+      overlay.classList.remove('overlay--visible')
+    })
   })
 
   overlay.addEventListener('click', function () {

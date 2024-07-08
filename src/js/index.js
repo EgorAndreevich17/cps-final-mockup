@@ -9,12 +9,16 @@ showHideSidebar(
   '.sidebar'
 )
 
-showHideSidebar('.popup__button-close', '.button-menu--icon--message', '.popup')
-// showHideSidebar(
-//   '.popup-call__button-close',
-//   '.button-menu--icon--phone',
-//   '.popup-call'
-// )
+showHideSidebar(
+  '.popup__button-close',
+  '.button-menu--icon--message',
+  '.popup-message'
+)
+showHideSidebar(
+  '.popup__button-close',
+  '.button-menu--icon--phone',
+  '.popup-call'
+)
 swiperInit(
   '.brand-slider',
   '.brand-slider__list',

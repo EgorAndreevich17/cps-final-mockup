@@ -112,7 +112,7 @@
         </div>
       </footer>
     </aside>
-    <aside class="popup popup--hide">
+    <aside class="popup popup-message popup-message--hide">
       <div class="popup__wrapper">
         <button
           class="button-menu button-menu--icon--cross popup__button-close"
@@ -123,29 +123,66 @@
           <input
             type="text"
             name="firstName"
+            class="popup__name-input"
             id="firstName"
             placeholder="Имя"
           />
           <input
             type="tel"
             name="telNumber"
+            class="popup__tel-input"
             id="telNumber"
             placeholder="Телефон"
           />
           <input
             type="email"
             name="email"
+            class="popup__email-input"
             id="email"
             placeholder="Электронная почта"
           />
           <textarea
             name="textMessage"
             id="textMessage"
+            class="popup__message-input"
             cols="5"
             placeholder="Сообщение"
           ></textarea>
+          <p class="popup__disclaimer"
+            >Нажимая “отправить”, вы даете согласие на
+            <a href="#" class="popup__link">обработку персональных данных</a>
+            и соглашаетесь с нашей
+            <a href="#" class="popup__link">политикой конфиденциальности</a></p
+          >
           <button type="submit" class="popup__button-submit elipse-button"
-            >Отправить</button
+            >ОТПРАВИТЬ</button
+          >
+        </form>
+      </div>
+    </aside>
+    <aside class="popup popup-call popup-call--hide">
+      <div class="popup__wrapper">
+        <button
+          class="button-menu button-menu--icon--cross popup__button-close"
+          type="button"
+        ></button>
+        <h2 class="popup__title highlighted-text">Заказать звонок</h2>
+        <form class="popup__form">
+          <input
+            type="tel"
+            name="telNumber"
+            class="popup__tel-input"
+            id="telNumber"
+            placeholder="Телефон"
+          />
+          <p class="popup__disclaimer"
+            >Нажимая “отправить”, вы даете согласие на
+            <a href="#" class="popup__link">обработку персональных данных</a>
+            и соглашаетесь с нашей
+            <a href="#" class="popup__link">политикой конфиденциальности</a></p
+          >
+          <button type="submit" class="popup__button-submit elipse-button"
+            >ОТПРАВИТЬ</button
           >
         </form>
       </div>
@@ -480,6 +517,16 @@
             >
           </div>
         </section>
+        <footer class="page-footer">
+          <div class="page-footer__elem"
+            >© 2019 CPS<br />Разработано командой Apesong
+          </div>
+          <div class="page-footer__elem">Политика конфиденциальности</div>
+          <div class="page-footer__elem"
+            >Информация, размещенная на данной странице, не является публичной
+            офертой</div
+          >
+        </footer>
       </main>
     </div>
     <!-- <script src="./js/swiper-bundle.min.js"></script> -->
