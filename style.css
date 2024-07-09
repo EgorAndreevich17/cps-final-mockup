@@ -704,6 +704,25 @@ p:not(:last-child) {
     border-collapse: collapse;
     overflow: hidden;
     position: relative; }
+  .prices-body__info {
+    width: 421px;
+    margin-top: 32px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: left; }
+  .prices-body__link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 700;
+    margin-top: 16px;
+    line-height: 24px; }
+    .prices-body__link::after {
+      content: url(./static/dropdown.svg);
+      position: relative;
+      left: 16px;
+      vertical-align: middle; }
 
 .prices-table {
   width: 100%;
@@ -755,20 +774,26 @@ p:not(:last-child) {
         position: static; } }
   @media screen and (min-width: 768px) {
     .prices-table {
-      display: table; }
+      display: table;
+      border-collapse: separate;
+      border-spacing: 0; }
       .prices-table__row {
         display: table-row;
         width: 100%;
         height: auto;
         padding-block: 23px;
-        position: static; }
+        position: relative;
+        background-color: transparent; }
       .prices-table__body {
-        display: table-row-group; }
+        display: table-row-group;
+        background-color: #ffffff;
+        border-radius: 6px; }
       .prices-table__head {
         display: table-header-group; }
       .prices-table__cell {
         display: table-cell;
-        position: static; } }
+        position: static;
+        border-radius: 0; } }
 
 
 /*# sourceMappingURL=style.css.map*/
