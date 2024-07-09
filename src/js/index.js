@@ -31,11 +31,17 @@ swiperInit(
   '.type-slider__item',
   '#typesPagination'
 )
+// swiperInit(
+//   '.service-slider',
+//   '.service-slider__list',
+//   '.service-slider__item',
+//   '#servicesPagination'
+// )
 swiperInit(
-  '.service-slider',
-  '.service-slider__list',
-  '.service-slider__item',
-  '#servicesPagination'
+  '.prices-table',
+  '.prices-table__body',
+  '.prices-table__row',
+  '#paginationSliderPrice'
 )
 readMoreButton('.about__button', '.about__text', 'Читать далее')
 readMoreButton('.brand-slider__show-more-button', '.brand-slider__list')

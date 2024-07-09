@@ -2,18 +2,21 @@
   &__inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
   &__logo {
     height: 50px;
     cursor: pointer;
-    margin-right: 78px;
+    margin-left: 16px;
+    margin-right: auto;
     @media screen and (min-width: 768px) {
-      margin-left: 32px;
+      margin-left: 36px;
     }
     @media screen and (min-width: 1336px) {
       margin-left: 0;
     }
+  }
+  .sidebar-header__button.button-menu.button-menu--icon--plain--search {
+    margin-left: auto;
   }
 
   @media screen and (min-width: 1336px) {

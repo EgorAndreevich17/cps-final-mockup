@@ -1,0 +1,89 @@
+.prices-table {
+  width: 100%;
+  // Нижние три свойства не должны работать от 768px
+  display: block;
+  overflow: hidden;
+  margin-right: -24px;
+  &__row
+  // Все свойства row не должны работать от 768px
+  {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 260px;
+    height: 200px;
+    // padding: 16px;
+    position: relative;
+    margin: 0;
+  }
+  &__cell {
+    border-radius: 6px;
+    text-align: left;
+    padding: 16px;
+    height: 56px;
+    // Нижние два свойства не должны работать для width 768px
+    display: block;
+    position: relative;
+    &--gray {
+      color: $dark-gray;
+      opacity: 0.7218;
+    }
+    &::before {
+      content: attr(data-label);
+      color: $dark-gray;
+      position: absolute;
+      top: 0;
+      &:nth-child(3) {
+        white-space: nowrap;
+      }
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+  &__body {
+    border-radius: 6px;
+    // Нижние два свойства не должны работать от 768px
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  &__head {
+    display: none;
+    // @media screen and (min-width: 768px) {
+    //   display: table-header-group;
+    // }
+  }
+  &__button {
+    position: absolute;
+    right: 0;
+    bottom: 70px;
+    z-index: 3000;
+    @media screen and (min-width: 768px) {
+      position: static;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: table;
+    // overflow: visible;
+    // margin-right: 0;
+    &__row {
+      display: table-row;
+      width: 100%;
+      height: auto;
+      padding-block: 23px;
+      position: static;
+    }
+    &__body {
+      display: table-row-group;
+      // flex-wrap: nowrap;
+    }
+    &__head {
+      display: table-header-group;
+    }
+    &__cell {
+      display: table-cell;
+      position: static;
+    }
+  }
+}
