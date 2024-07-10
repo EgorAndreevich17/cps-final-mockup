@@ -602,7 +602,7 @@ p:not(:last-child) {
   .main-content {
     float: left;
     width: calc(100% - 320px);
-    margin-left: 320px; } }
+    margin-right: calc((100%-320px) / 2); } }
 
 .sidebar-main__list {
   display: flex;
