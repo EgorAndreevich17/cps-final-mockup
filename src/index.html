@@ -188,8 +188,9 @@
       </div>
     </aside>
     <div class="overlay"></div>
-    <div class="main-content">
-      <header class="header">
+     <div class="main-content">
+      <div class="main-content__wrapper">
+        <header class="header">
         <div class="header__inner">
           <button
             class="header__button button-menu button-menu--icon--burger"
@@ -229,8 +230,8 @@
             ></button>
           </div>
         </div>
-      </header>
-      <main class="main">
+        </header>
+        <main class="main">
         <header class="main-header">
           <h1 class="main__title highlighted-text">Услуги и сервисы</h1>
           <div class="main-header__service-menu">
@@ -247,7 +248,7 @@
         <nav class="main-menu">
           <ul class="main-menu__list">
             <li class="main-menu__item">
-              <a class="main-menu__link" href="#">Ремонтируемые бренды</a>
+              <a class="main-menu__link main-menu__link--active" href="#">Ремонтируемые бренды</a>
             </li>
             <li class="main-menu__item">
               <a class="main-menu__link" href="#">Ремонтируемые устройства</a>
@@ -452,78 +453,12 @@
             </button>
           </div>
         </section>
-        <!-- <section class="section">
-          <div class="section__header">
-            <h2 class="section__title">Цены на услуги</h2>
-          </div>
-          <div class="section__body service-slider">
-            <ul class="service-slider__list service-slider__list--preview">
-              <li class="service-slider__item"
-                ><div class="service-slider__service-name"
-                  >Ремонт ноутбуков</div
-                >
-                <div class="service-slider__service-price">Бесценно</div>
-                <div class="service-slider__service-time">Две минуты</div>
-                <button class="service-slider__button elipse-button"
-                  >Заказать</button
-                ></li
-              >
-              <li class="service-slider__item"
-                ><div class="service-slider__service-name"
-                  >Ремонт ноутбуков</div
-                >
-                <div class="service-slider__service-price">Бесценно</div>
-                <div class="service-slider__service-time">Две минуты</div>
-                <button class="service-slider__button elipse-button"
-                  >Заказать</button
-                ></li
-              >
-              <li class="service-slider__item"
-                ><div class="service-slider__service-name"
-                  >Ремонт ноутбуков</div
-                >
-                <div class="service-slider__service-price">Бесценно</div>
-                <div class="service-slider__service-time">Две минуты</div>
-                <button class="service-slider__button elipse-button"
-                  >Заказать</button
-                ></li
-              >
-              <li class="service-slider__item"
-                ><div class="service-slider__service-name"
-                  >Ремонт ноутбуков</div
-                >
-                <div class="service-slider__service-price">Бесценно</div>
-                <div class="service-slider__service-time">Две минуты</div>
-                <button class="service-slider__button elipse-button"
-                  >Заказать</button
-                ></li
-              >
-              <li class="service-slider__item"
-                ><div class="service-slider__service-name"
-                  >Ремонт ноутбуков</div
-                >
-                <div class="service-slider__service-price">Бесценно</div>
-                <div class="service-slider__service-time">Две минуты</div>
-                <button class="service-slider__button elipse-button"
-                  >Заказать</button
-                ></li
-              >
-            </ul>
-            <div class="swiper-pagination" id="servicesPagination"></div>
-            <p class="service-slider__disclaimer"
-              >Все цены указаны с учетом НДС. Стоимость ремонта указана на
-              единичную услугу. Для получения коммерческого предложения на
-              постоянное обслуживание, оставьте заявку.</p
-            >
-          </div>
-        </section> -->
-
         <section class="section">
           <header class="section__header">
             <h2 class="section__title h2">Цены на услуги</h2>
           </header>
 
-          <div class="prices-body">
+          <div class="prices-body section__body">
             <div class="prices-body__wrapper">
               <table class="prices-body__table prices-table">
 
@@ -644,8 +579,8 @@
 
               <div class="pagination-slider" id="paginationSliderPrice"></div>
 
-              <div class="prices-body-info">
-                Все цены указаны с учетом НДС. Стоимость ремонта указана на
+              <div class="prices-body__info">
+                Все цены указаны с учетом НДС. <br>Стоимость ремонта указана на
                 единичную услугу. Для получения коммерческого предложения на
                 постоянное обслуживание, оставьте заявку.
               </div>
@@ -667,11 +602,9 @@
             офертой</div
           >
         </footer>
-      </main>
+        </main>
+      </div>
     </div>
-    <!-- <script src="./js/swiper-bundle.min.js"></script> -->
-    <!-- <script src="./js/swiper.js"></script> -->
-    <!-- <script src="./js/show-more-button.js"></script> -->
     <script src="./js/index.js"></script>
   </body>
 </html>
