@@ -82,10 +82,10 @@ h6 {
   font-display: swap; }
 
 body {
+  position: relative;
   font-family: 'TT Lakes', sans-serif;
   font-size: 16px;
-  background-color: #f8f8f8;
-  max-width: 1440px; }
+  background-color: #f8f8f8; }
 
 p:not(:last-child) {
   margin-bottom: 24px; }
@@ -600,9 +600,15 @@ p:not(:last-child) {
 
 @media (min-width: 1366px) {
   .main-content {
-    float: left;
-    width: calc(100% - 320px);
-    margin-right: calc((100%-320px) / 2); } }
+    width: calc(100vw - 320px);
+    margin-left: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main-content__wrapper {
+      position: relative;
+      max-width: 1120px;
+      width: 100%; } }
 
 .sidebar-main__list {
   display: flex;
@@ -703,7 +709,8 @@ p:not(:last-child) {
   width: 100%;
   color: #7e7e82; }
   .page-footer__elem {
-    width: calc(100% / 3); }
+    width: calc(100% / 3);
+    word-wrap: break-word; }
 
 .prices-body {
   overflow: hidden;
