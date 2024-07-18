@@ -25,7 +25,7 @@ swiperInit(
   '.brand-slider',
   '.brand-slider__list',
   '.brand-slider__item',
-  '#brandsPagination'
+  '.brand-slider__pagination'
 )
 
 swiperInit(

@@ -1,5 +1,4 @@
 .brand-slider {
-  height: fit-content;
   overflow: hidden;
   &__list {
     display: flex;
@@ -21,8 +20,8 @@
   }
 
   &__pagination {
-    // text-align: center;
-    // height: 16px;
+    text-align: center;
+    height: 16px;
   }
 
   &__show-more-button {

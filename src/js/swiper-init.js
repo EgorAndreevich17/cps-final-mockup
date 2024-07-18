@@ -5,7 +5,7 @@ export const swiperInit = function (
   wrapperSelector,
   listSelector,
   itemSelector,
-  paginationId
+  paginationSelector
 ) {
   if (window.innerWidth < 768) {
     const swiper = new Swiper(wrapperSelector, {
@@ -14,7 +14,7 @@ export const swiperInit = function (
       slideClass: itemSelector.substring(1),
       spaceBetween: 16,
       pagination: {
-        el: paginationId,
+        el: paginationSelector,
         clickable: true
       }
     })
