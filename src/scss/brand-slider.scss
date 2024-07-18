@@ -20,8 +20,15 @@
   }
 
   &__pagination {
-    text-align: center;
-    height: 16px;
+    // align-items: center;
+    // display: flex;
+    // gap: 12px;
+    // justify-content: center;
+    // margin-top: 16px;
+
+    // @media screen and (min-width: 768px) {
+    //   display: none;
+    // }
   }
 
   &__show-more-button {
