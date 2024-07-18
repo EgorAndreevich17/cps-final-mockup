@@ -1,12 +1,14 @@
 .main-menu {
   position: relative;
+  padding-top: 24px;
+  padding-inline: 16px;
   &__list {
     display: flex;
     gap: 1px;
     overflow: scroll;
     scrollbar-width: none;
-    margin-left: 16px;
-    margin-top: 24px;
+    // margin-left: 16px;
+    // margin-top: 24px;
   }
   &__item {
     flex-shrink: 0;
@@ -28,16 +30,18 @@
 
   @media screen and (min-width: 768px) {
     &__list {
-      margin-top: 32px;
+      // margin-top: 32px;
     }
   }
   @media screen and (min-width: 1366px) {
+    padding-top: 8px;
+    padding-inline: 32px;
     &__list {
       overflow: visible;
       flex-wrap: wrap;
-      padding-inline: 22px;
-      margin-top: 8px;
-      margin-left: 32px;
+      // padding-inline: 22px;
+      // margin-top: 8px;
+      // margin-left: 32px;
       padding: 0;
     }
     &__link {

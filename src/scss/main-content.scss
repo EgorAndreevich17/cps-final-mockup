@@ -1,14 +1,14 @@
 .main-content {
   @media (min-width: 1366px) {
-    width: calc(100vw - 320px);
+    max-width: calc(100vw - 320px);
     margin-left: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
-    &__wrapper {
-      position: relative;
-      max-width: 1120px;
-      width: 100%;
-    }
+    // &__wrapper {
+    //   position: relative;
+    //   // max-width: 1120px;
+    //   width: 100%;
+    // }
   }
 }

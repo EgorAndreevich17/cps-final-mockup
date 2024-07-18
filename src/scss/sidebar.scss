@@ -7,7 +7,7 @@
   box-shadow: 16px 0px 52px 0px #0e185033;
   padding: 18px 16px;
   background: white;
-  z-index: 1000;
+  z-index: 900;
 
   &__sidebar-footer {
     margin-top: auto;
@@ -26,7 +26,6 @@
     width: 320px;
     padding: 18px 16px;
     background: white;
-    z-index: 1000;
     box-shadow: none;
     padding-block: 30px;
 
