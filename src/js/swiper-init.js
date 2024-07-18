@@ -1,7 +1,12 @@
 import Swiper from 'swiper'
 
 // Swiper
-export const swiperInit = function (wrapperSelector, listSelector, itemSelector, paginationClass) {
+export const swiperInit = function (
+  wrapperSelector,
+  listSelector,
+  itemSelector,
+  paginationId
+) {
   if (window.innerWidth < 768) {
     const swiper = new Swiper(wrapperSelector, {
       slidesPerView: 'auto',
@@ -9,10 +14,9 @@ export const swiperInit = function (wrapperSelector, listSelector, itemSelector,
       slideClass: itemSelector.substring(1),
       spaceBetween: 16,
       pagination: {
-        el: paginationClass,
+        el: paginationId,
         clickable: true
       }
     })
   }
 }
-

@@ -1,7 +1,8 @@
 export const showHideSidebar = function (
   closeButtonSelector,
   openButtonSelector,
-  sideBarSelector
+  sideBarSelector,
+  isModalWindow
 ) {
   const overlay = document.querySelector('.overlay')
   const closeButtons = document.querySelectorAll(closeButtonSelector)
@@ -11,19 +12,30 @@ export const showHideSidebar = function (
   openButtons.forEach((openButton) => {
     openButton.addEventListener('click', function () {
       sidebar.classList.remove(sideBarSelector.substring(1) + '--hide')
-      overlay.classList.add('overlay--visible')
+      if (isModalWindow) {
+        overlay.classList.remove('overlay--menu')
+        overlay.classList.add('overlay--modal')
+      } else {
+        overlay.classList.remove('overlay--modal')
+        overlay.classList.add('overlay--menu')
+      }
     })
   })
 
   closeButtons.forEach((closeButton) => {
     closeButton.addEventListener('click', function () {
       sidebar.classList.add(sideBarSelector.substring(1) + '--hide')
-      overlay.classList.remove('overlay--visible')
+      if (isModalWindow) {
+        overlay.classList.remove('overlay--modal')
+      } else {
+        overlay.classList.remove('overlay--menu')
+      }
     })
   })
 
   overlay.addEventListener('click', function () {
     sidebar.classList.add(sideBarSelector.substring(1) + '--hide')
-    overlay.classList.remove('overlay--visible')
+    overlay.classList.remove('overlay--modal')
+    overlay.classList.remove('overlay--menu')
   })
 }

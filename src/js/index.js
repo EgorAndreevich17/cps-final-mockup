@@ -12,12 +12,14 @@ showHideSidebar(
 showHideSidebar(
   '.popup__button-close',
   '.button-menu--icon--message',
-  '.popup-message'
+  '.popup-message',
+  true
 )
 showHideSidebar(
   '.popup__button-close',
   '.button-menu--icon--phone',
-  '.popup-call'
+  '.popup-call',
+  true
 )
 swiperInit(
   '.brand-slider',
@@ -25,6 +27,7 @@ swiperInit(
   '.brand-slider__item',
   '#brandsPagination'
 )
+
 swiperInit(
   '.type-slider',
   '.type-slider__list',

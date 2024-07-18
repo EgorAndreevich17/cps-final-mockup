@@ -7,15 +7,21 @@
   background-color: rgba(255, 255, 255, 0.996);
   visibility: hidden;
   opacity: 0;
-  z-index: 800;
   transition: visibility 0s, opacity 0.3s linear;
   pointer-events: none;
-  &--visible {
+  &--modal {
     visibility: visible;
+    z-index: 850;
     opacity: 1;
     pointer-events: auto;
   }
-  @media (min-width: 1366px) {
-    z-index: 999;
+  &--menu {
+    visibility: visible;
+    z-index: 800;
+    opacity: 1;
+    pointer-events: auto;
   }
+  // @media (min-width: 768px) {
+  //   z-index: 800;
+  // }
 }
