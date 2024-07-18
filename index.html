@@ -6,7 +6,8 @@
     <title>Document</title>
   <link href="style.css" rel="stylesheet"></head>
   <body>
-    <aside class="sidebar sidebar--hide">
+    <div class="main-wrapper">
+      <aside class="sidebar sidebar--hide">
       <header class="sidebar-header">
         <div class="sidebar-header__inner">
           <button class="sidebar-header__button sidebar-header__button-close button-menu button-menu--icon--cross" type="button"></button>
@@ -18,7 +19,7 @@
       <main class="sidebar-main">
         <ul class="sidebar-main__list">
           <li class="sidebar-main__item">
-            <a class="sidebar-main__link">Ремонт техники</a>
+            <a class="sidebar-main__link sidebar-main__link--selected">Ремонт техники</a>
           </li>
           <li class="sidebar-main__item">
             <a class="sidebar-main__link">Услуги и сервисы</a>
@@ -70,11 +71,11 @@
           </div>
         </div>
       </footer>
-    </aside>
-    <aside class="popup popup-message popup-message--hide">
+      </aside>
+      <aside class="popup popup-message popup-message--hide">
       <div class="popup__wrapper">
         <button class="button-menu button-menu--icon--cross popup__button-close" type="button"></button>
-        <h2 class="popup__title highlighted-text">Обратная связь</h2>
+        <h2 class="highlighted-text popup__title">Обратная связь</h2>
         <form class="popup__form">
           <input type="text" name="firstName" class="popup__name-input" id="firstName" placeholder="Имя">
           <input type="tel" name="telNumber" class="popup__tel-input" id="telNumber" placeholder="Телефон">
@@ -87,11 +88,11 @@
           <button type="submit" class="popup__button-submit elipse-button">ОТПРАВИТЬ</button>
         </form>
       </div>
-    </aside>
-    <aside class="popup popup-call popup-call--hide">
+      </aside>
+      <aside class="popup popup-call popup-call--hide">
       <div class="popup__wrapper">
         <button class="button-menu button-menu--icon--cross popup__button-close" type="button"></button>
-        <h2 class="popup__title highlighted-text">Заказать звонок</h2>
+        <h2 class="highlighted-text popup__title">Заказать звонок</h2>
         <form class="popup__form">
           <input type="tel" name="telNumber" class="popup__tel-input" id="telNumber" placeholder="Телефон">
           <p class="popup__disclaimer">Нажимая “отправить”, вы даете согласие на
@@ -101,12 +102,11 @@
           <button type="submit" class="popup__button-submit elipse-button">ОТПРАВИТЬ</button>
         </form>
       </div>
-    </aside>
-    <div class="overlay"></div>
-     <div class="main-content">
-      <div class="main-content__wrapper">
+      </aside>
+      <div class="overlay"></div>
+      <div class="main-content">
         <header class="header">
-        <div class="header__inner">
+          <div class="header__inner">
           <button class="header__button button-menu button-menu--icon--burger" type="button"></button>
           <a href="#">
             <img class="header__logo" src="img/logo.svg" alt="Логотип CPS" width="96" height="50">
@@ -120,17 +120,17 @@
             <button class="button-menu button-menu--icon--service" type="button"></button>
             <button class="button-menu button-menu--icon--search" type="button"></button>
           </div>
-        </div>
+          </div>
         </header>
         <main class="main">
-        <header class="main-header">
+          <header class="main-header">
           <h1 class="main__title highlighted-text">Услуги и сервисы</h1>
           <div class="main-header__service-menu">
             Оставить заявку<button class="button-menu button-menu--icon--service" type="button"></button>
             Статус ремонта<button class="button-menu button-menu--icon--search" type="button"></button>
           </div>
-        </header>
-        <nav class="main-menu">
+          </header>
+          <nav class="main-menu">
           <ul class="main-menu__list">
             <li class="main-menu__item">
               <a class="main-menu__link main-menu__link--active" href="#">Ремонтируемые бренды</a>
@@ -151,8 +151,8 @@
               <a class="main-menu__link" href="#">Отзывы</a>
             </li>
           </ul>
-        </nav>
-        <section class="about main__about">
+          </nav>
+          <section class="about main__about">
           <div class="about__text-wrap">
             <div class="about__text about__text--preview">
               <p>
@@ -170,9 +170,9 @@
 
             <button class="about__button" type="button"> Читать далее </button>
           </div>
-          <img class="about__image" src="img/main_img.png" alt="Картинка с логотипом" width="320" height="176">
-        </section>
-        <section class="section">
+          <img class="about__image" src="img/main_img.png" alt="Картинка с логотипом">
+          </section>
+          <section class="section">
           <div class="section__header">
             <h2 class="section__title">Ремонт техники различных брендов</h2>
           </div>
@@ -223,13 +223,14 @@
                 <button class="brand-slider__button arrow-button"></button>
               </li>
             </ul>
-            <div class="swiper-pagination" id="brandsPagination"></div>
+            <div class="brand-slider__pagination" id="brandsPagination"></div>
             <button class="brand-slider__show-more-button">
               Показать все
             </button>
           </div>
-        </section>
-        <section class="section">
+          
+          </section>
+          <section class="section">
           <div class="section__header">
             <h2 class="section__title">Ремонт различных видов техники</h2>
           </div>
@@ -253,8 +254,8 @@
               Показать все
             </button>
           </div>
-        </section>
-        <section class="section">
+          </section>
+          <section class="section">
           <header class="section__header">
             <h2 class="section__title h2">Цены на услуги</h2>
           </header>
@@ -373,15 +374,15 @@
               <a class="prices-body__link" href="#">Получить коммерческое предложение</a>
             </div>
           </div>
-        </section>
+          </section>
 
-        <footer class="page-footer">
+          <footer class="page-footer">
           <div class="page-footer__elem">© 2019 CPS<br>Разработано командой Apesong
           </div>
           <div class="page-footer__elem">Политика конфиденциальности</div>
           <div class="page-footer__elem">Информация, размещенная на данной странице, не является публичной
             офертой</div>
-        </footer>
+          </footer>
         </main>
       </div>
     </div>
