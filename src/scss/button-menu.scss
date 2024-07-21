@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  &--icon--burger {
+  &--icon-burger {
     background-image: url(../img/burger-button.svg);
   }
   &--icon--service {
@@ -18,28 +18,28 @@
     background-image: url(../img/search-button.svg);
   }
 
-  &--icon--plain--search {
+  &--icon-plain-search {
     background-image: url(../img/plain-search.svg);
   }
 
-  &--icon--phone {
+  &--icon-phone {
     background-image: url(../img/call-button.svg);
   }
 
-  &--icon--message {
+  &--icon-message {
     background-image: url(../img/message-button.svg);
   }
 
-  &--icon--contact {
+  &--icon-contact {
     background-image: url(../img/user-button.svg);
   }
 
-  &--icon--cross {
+  &--icon-cross {
     background-image: url(../img/cross-button.svg);
   }
 
   @media screen and (min-width: 768px) {
-    &--icon--burger::after {
+    &--icon-burger::after {
       content: '';
       display: block;
       height: 32px;

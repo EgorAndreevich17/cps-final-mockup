@@ -12,19 +12,26 @@
     flex-direction: column;
     justify-content: space-between;
     min-width: 260px;
-    height: 200px;
-    // padding: 16px;
+    min-height: 200px;
+    padding: 16px;
+    padding-top: 32px;
     position: relative;
     margin: 0;
   }
   &__cell {
     border-radius: 6px;
-    text-align: left;
-    padding: 16px;
-    height: 56px;
+    // text-align: left;
+    // padding: 23px 0;
+    // height: 56px;
     // Нижние два свойства не должны работать для width 768px
     display: block;
     position: relative;
+    &:last-child {
+      padding: 0;
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+    }
     &--gray {
       color: $dark-gray;
       opacity: 0.7218;
@@ -33,7 +40,8 @@
       content: attr(data-label);
       color: $dark-gray;
       position: absolute;
-      top: 0;
+      bottom: 20px;
+      padding-top: 16px;
       &:nth-child(3) {
         white-space: nowrap;
       }
@@ -54,15 +62,15 @@
     //   display: table-header-group;
     // }
   }
-  &__button {
-    position: absolute;
-    right: 16px;
-    bottom: 70px;
-    z-index: 3000;
-    @media screen and (min-width: 768px) {
-      position: static;
-    }
-  }
+  // &__button {
+  //   position: absolute;
+  //   right: 16px;
+  //   bottom: 70px;
+  //   z-index: 3000;
+  //   @media screen and (min-width: 768px) {
+  //     position: static;
+  //   }
+  // }
   @media screen and (min-width: 768px) {
     display: table;
     border-collapse: separate;

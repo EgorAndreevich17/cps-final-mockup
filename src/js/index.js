@@ -4,20 +4,20 @@ import { readMoreButton } from './read-more-button.js'
 import { showHideSidebar } from './show-hide-sidebar.js'
 
 showHideSidebar(
-  '.button-menu--icon--cross',
-  '.button-menu--icon--burger',
+  '.button-menu--icon-cross',
+  '.button-menu--icon-burger',
   '.sidebar'
 )
 
 showHideSidebar(
   '.popup__button-close',
-  '.button-menu--icon--message',
+  '.button-menu--icon-message',
   '.popup-message',
   true
 )
 showHideSidebar(
   '.popup__button-close',
-  '.button-menu--icon--phone',
+  '.button-menu--icon-phone',
   '.popup-call',
   true
 )
