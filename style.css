@@ -619,7 +619,7 @@ p:not(:last-child) {
   background-color: #ff3e79;
   background-image: url(./static/dropdown-white.svg);
   background-repeat: no-repeat;
-  background-position: 100px center; }
+  background-position: 90px center; }
   .elipse-button:hover {
     color: #ff3e79;
     border-color: #ff3e79;
@@ -786,6 +786,10 @@ p:not(:last-child) {
     display: block;
     position: relative; }
     .prices-table__cell:last-child {
+      font-weight: 700;
+      letter-spacing: -0.15px;
+      font-size: 12px;
+      text-transform: uppercase;
       padding: 0;
       position: absolute;
       bottom: 16px;
@@ -819,19 +823,31 @@ p:not(:last-child) {
         display: table-row;
         width: 100%;
         height: auto;
-        padding-block: 23px;
         position: relative;
-        background-color: transparent; }
+        background-color: transparent;
+        text-align: left; }
       .prices-table__body {
         display: table-row-group;
         background-color: #ffffff;
-        border-radius: 6px; }
+        border-radius: 6px;
+        padding-inline: 23px; }
       .prices-table__head {
         display: table-header-group; }
       .prices-table__cell {
         display: table-cell;
-        position: static;
-        border-radius: 0; } }
+        position: relative;
+        border-radius: 0;
+        text-align: left;
+        padding: 23px 0;
+        height: 56px; }
+        .prices-table__cell:last-child {
+          padding: 0;
+          position: relative;
+          bottom: 0;
+          right: 0;
+          display: flex;
+          justify-content: right;
+          align-items: center; } }
 
 .swiper-pagination,
 .pagination-slider {
