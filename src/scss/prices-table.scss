@@ -116,7 +116,7 @@
       border-radius: 0;
 
       text-align: left;
-      padding: 23px 0;
+      padding: 23px 16px;
       height: 56px;
       &:last-child {
         padding: 0;
@@ -126,6 +126,7 @@
         display: flex;
         justify-content: right;
         align-items: center;
+        margin-right: 16px;
       }
     }
   }

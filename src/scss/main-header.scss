@@ -1,16 +1,9 @@
 .main-header {
-  padding-top: 24px;
-  padding-inline: 16px;
   &__service-menu {
     display: none;
   }
-  @media screen and (min-width: 768px) {
-    padding-inline: 24px;
-  }
 
   @media screen and (min-width: 1366px) {
-    padding-top: 42px;
-    padding-inline: 32px;
     .header {
       display: none;
     }
